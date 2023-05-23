@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: roboto;
+
+}
+.galeria{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+
+}
+.galeria img{
+    padding: 1rem;
+}
