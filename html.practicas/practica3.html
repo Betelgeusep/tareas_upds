@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3 js</title>
+
+    <link rel="stylesheet" href="../css/practica3.css">
+</head>
+<body>
+    <main>
+        <section class="titulo container">
+            <h1 class="titulo">Practica 3 : Javascript</h1>
+
+        </section>
+        <section class="ejercicios">
+            <div class="ejercicio">
+                <h2 class="titulo2">Ejercicio 1</h2>
+                <h3 class="enunciado">Desarrolle una función en JavaScript que permita leer una temperatura
+                en grados Celsius y devuelva el clima según la siguiente tabla:
+                </h3>
+                <p class="enunciado2"> 
+                    <strong>Temperatura   Clima</strong>  <br>
+                    -10 °C – 15 °C   Frio <br>
+                    16°C – 25 °C     Templado <br>
+                    26°C – 40 °C     Calor <br>
+                </p>
+                <form action class="form">
+                    <p>Ingrese la temperatura en Grados Celsius:</p>
+                    <input id=gradoscelsius type="text" >
+                    <br>
+                    <p>El clima esta:</p>
+                    <input id=clima type="text" readonly>
+                    <input type="button" name="enviar"  class="buttom" onclick="temperatura()" value="calcular">
+
+
+                </form>
+            </div>
+
+
+            <div class="ejercicio">
+                <h2 class="titulo2">Ejercicio 2</h2>
+                <h3 class="enunciado">
+                    Desarrolle una función en JavaScript que permita leer un número y
+                    devuelva el factorial del mismo.
+                </h3>
+                <p class="enunciado2"> 
+                    Ejemplo. N= 5   <br>
+                    Proceso 1*2*3*4*5<br>
+                    Resultado = 120<br>
+                </p>
+                <form action class="form">
+                    <p>Ingrese el numero que quiere para sacar el factorial:</p>
+                    <input id=N type="text" >
+                    <br>
+                    <p>El factorial del numero es:</p>
+                    <input id=resultado type="text" readonly>
+                    <input type="button" name="enviar"  class="buttom" onclick="factorial()" value="calcular">
+
+
+                </form>
+            </div>
+
+
+            <div class="ejercicio">
+                <h2 class="titulo2">Ejercicio 3</h2>
+                <h3 class="enunciado">
+                    Desarrolle una función en JavaScript que muestre el algoritmo Fizz-Buzz
+                </h3>
+                <p class="enunciado2"> 
+                    Este algoritmo se basa en que se debe hacer un contador desde el
+                    número 1 al número 100, en orden correlativo, pero cada vez que un
+                    número sea múltiplo de 3, debe decir Fizz y cada vez que un número sea
+                    múltiplo de 5, debe decir Buzz, en el caso que un número sea múltiplo de
+                    3 y 5, debe decir FizzBuzz, si el número no es múltiplo de 3 o 5 no
+                    mostrara nada
+                </p>
+                <form action class="form">
+                    <p>Ingrese contador:</p>
+                    <input id=contador type="text" >
+                    <textarea name="Cuadro" id="FizzBuzz" cols="30" rows="20" spellcheck="false"></textarea>
+                    <br>
+                    <p>El resultado es:</p>
+                    
+                    <input type="button" name="enviar"  class="buttom" onclick="fizzbuzz()" value="calcular">
+                </form>
+            </div>
+
+
+            <div class="ejercicio">
+                <h2 class="titulo2">Ejercicio 4</h2>
+                <h3 class="enunciado">
+                    Desarrolle una función en JavaScript que muestre la fecha actual.
+                </h3>
+                <p class="enunciado2"> 
+                    Ejemplo: Jueves, 25 de Mayo del 2023
+                </p>
+                <form action class="form">
+                    <p>La fecha actual es:</p>
+                    <input id=fecha type="text" readonly>
+                    
+                    <input type="button" name="enviar"  class="buttom" onclick="Fecha()" value="calcular">
+                </form>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+        
+
+
+    
+    </main>
+    
+
+
+
+
+    <script src="../js/practica3.js"></script>
+</body>
+</html>
